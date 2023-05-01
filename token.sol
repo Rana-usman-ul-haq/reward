@@ -1283,14 +1283,14 @@ contract PepeJesus is ERC20, Ownable {
         rewardToken = 0x55d398326f99059fF775485246999027B3197955;
         _marketingWalletAddress = 0xA26D5c96f51E2E6E60d337DEd7b2B4382f0CE2c7;
 
-        buyTokenRewardsFee = 5;
+        buyTokenRewardsFee = 0;
         buyLiquidityFee = 0;
-        buyMarketingFee = 0;
+        buyMarketingFee = 5;
         buyDeadFee = 0;
 
-        sellTokenRewardsFee = 5;
+        sellTokenRewardsFee = 0;
         sellLiquidityFee = 0;
-        sellMarketingFee = 0;
+        sellMarketingFee = 5;
         sellDeadFee = 0;
 
         require(buyTokenRewardsFee.add(buyLiquidityFee).add(buyMarketingFee).add(buyDeadFee) <= 25, "Total buy fee is over 25%");
